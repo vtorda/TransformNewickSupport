@@ -3,9 +3,6 @@ library(readr)
 args <- commandArgs(TRUE)
 path <- args[1]
 pattern <- args[2]
-# path <- "./Documents/MUNKA/PhD/Boletales_genomics/scripts/"
-#pattern <- "^RAxML.*.bestTreeSH$"
-#logfiles <- list.files(path, pattern = "*.raxml.log$")
 files <- list.files(path, pattern)
 max <- length(files)
 pb <- txtProgressBar(min = 0, max = max, style = 3)
